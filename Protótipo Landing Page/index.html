@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Studio — Design que eleva o seu negócio</title>
+  <meta name="description" content="Site institucional moderno, elegante e responsivo." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Este arquivo tem 4 lugares principais para trocar o conteúdo real do cliente (marcados com comentários "PERSONALIZAR"):
+       1) Nome da marca (logo em texto) — aparece no header e footer
+       2) Textos do Hero
+       3) Lista de serviços/produtos
+       4) Dados de contato (telefone, e-mail, endereço, redes sociais)
+       As cores e fontes ficam centralizadas em css/style.css (:root) -->
+
+  <!-- HEADER / NAV  -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#topo" class="logo">Studio<span>.</span></a> <!-- PERSONALIZAR: nome da marca -->
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+
+      <a href="#contato" class="btn btn-primary nav-cta">Fale conosco</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="topo">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <p class="eyebrow" data-reveal>Design & desenvolvimento web</p>
+      <h1 class="hero-title" data-reveal>
+        Sua marca merece <em>um site</em> à altura dela.
+      </h1>
+      <!-- PERSONALIZAR: título e subtítulo do hero -->
+      <p class="hero-subtitle" data-reveal>
+        Criamos sites modernos, rápidos e responsivos que transformam
+        visitantes em clientes — com identidade visual premium do
+        primeiro ao último pixel.
+      </p>
+      <div class="hero-actions" data-reveal>
+        <a href="#contato" class="btn btn-primary btn-lg">
+          <span>Solicitar orçamento</span>
+        </a>
+        <a href="#servicos" class="btn btn-ghost btn-lg">Ver serviços</a>
+      </div>
+    </div>
+    <a href="#servicos" class="scroll-cue" aria-label="Rolar para baixo">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- MARQUEE DE CONFIANÇA (opcional) -->
+  <div class="trust-strip" aria-hidden="true">
+    <div class="trust-track">
+      <span>Design moderno</span><span>•</span>
+      <span>Alta performance</span><span>•</span>
+      <span>100% responsivo</span><span>•</span>
+      <span>SEO amigável</span><span>•</span>
+      <span>Design moderno</span><span>•</span>
+      <span>Alta performance</span><span>•</span>
+      <span>100% responsivo</span><span>•</span>
+      <span>SEO amigável</span><span>•</span>
+    </div>
+  </div>
+
+  <!-- SERVIÇOS -->
+  <section class="section" id="servicos">
+    <div class="container">
+      <p class="section-eyebrow" data-reveal>O que fazemos</p>
+      <h2 class="section-title" data-reveal>Serviços pensados para o seu resultado</h2>
+
+      <!-- PERSONALIZAR: lista de serviços/produtos reais do cliente -->
+      <div class="services-grid">
+        <article class="service-card" data-reveal>
+          <span class="service-index">01</span>
+          <h3>Sites institucionais</h3>
+          <p>Presença digital moderna e profissional para apresentar sua marca com credibilidade.</p>
+        </article>
+        <article class="service-card" data-reveal>
+          <span class="service-index">02</span>
+          <h3>Landing pages</h3>
+          <p>Páginas de alta conversão, focadas em transformar visita em contato ou venda.</p>
+        </article>
+        <article class="service-card" data-reveal>
+          <span class="service-index">03</span>
+          <h3>E-commerce</h3>
+          <p>Lojas virtuais rápidas, seguras e fáceis de administrar no dia a dia.</p>
+        </article>
+        <article class="service-card" data-reveal>
+          <span class="service-index">04</span>
+          <h3>Manutenção & performance</h3>
+          <p>Otimização de velocidade, SEO técnico e suporte contínuo pós-lançamento.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE / DIFERENCIAIS -->
+  <section class="section section-alt" id="sobre">
+    <div class="container about-grid">
+      <div data-reveal>
+        <p class="section-eyebrow">Por que trabalhar com a gente</p>
+        <h2 class="section-title">Compromisso com resultado, do briefing à entrega</h2>
+        <p class="about-text">
+          <!-- PERSONALIZAR: texto institucional real -->
+          Unimos design cuidadoso e código limpo para entregar sites que
+          carregam rápido, funcionam bem em qualquer tela e representam
+          o padrão premium que a sua marca merece.
+        </p>
+      </div>
+
+      <ul class="about-list" data-reveal>
+        <li>
+          <span class="check">✓</span>
+          <div>
+            <strong>Design 100% responsivo</strong>
+            <p>Experiência consistente em celular, tablet e computador.</p>
+          </div>
+        </li>
+        <li>
+          <span class="check">✓</span>
+          <div>
+            <strong>Performance em primeiro lugar</strong>
+            <p>Código enxuto, imagens otimizadas e carregamento rápido.</p>
+          </div>
+        </li>
+        <li>
+          <span class="check">✓</span>
+          <div>
+            <strong>Código limpo e organizado</strong>
+            <p>Fácil de manter, expandir e entregar para qualquer equipe.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section class="section" id="depoimentos">
+    <div class="container">
+      <p class="section-eyebrow" data-reveal>Depoimentos</p>
+      <h2 class="section-title" data-reveal>Quem já trabalhou com a gente</h2>
+
+      <!-- PERSONALIZAR: depoimentos reais de clientes -->
+      <div class="testimonials-grid">
+        <blockquote class="testimonial-card" data-reveal>
+          <p>"O site ficou muito mais profissional do que eu esperava. Recebi elogios dos meus próprios clientes."</p>
+          <footer>— Depoimento de cliente (exemplo)</footer>
+        </blockquote>
+        <blockquote class="testimonial-card" data-reveal>
+          <p>"Processo rápido, comunicação clara e o resultado final superou o que eu tinha em mente."</p>
+          <footer>— Depoimento de cliente (exemplo)</footer>
+        </blockquote>
+        <blockquote class="testimonial-card" data-reveal>
+          <p>"Site carrega muito rápido e funciona perfeitamente no celular. Recomendo."</p>
+          <footer>— Depoimento de cliente (exemplo)</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="section section-alt" id="contato">
+    <div class="container contact-grid">
+      <div data-reveal>
+        <p class="section-eyebrow">Vamos conversar</p>
+        <h2 class="section-title">Pronto para elevar sua presença digital?</h2>
+        <p class="about-text">
+          Preencha o formulário ou entre em contato direto pelos canais abaixo.
+        </p>
+
+        <!-- PERSONALIZAR: dados reais de contato -->
+        <ul class="contact-info">
+          <li><strong>E-mail:</strong> contato@seudominio.com.br</li>
+          <li><strong>Telefone/WhatsApp:</strong> (00) 00000-0000</li>
+          <li><strong>Localização:</strong> Sua cidade, Estado</li>
+        </ul>
+      </div>
+
+      <form class="contact-form" id="contactForm" data-reveal>
+        <div class="field">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" required />
+        </div>
+        <div class="field">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="field">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">
+          <span>Enviar mensagem</span>
+        </button>
+        <p class="form-note" id="formNote"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#topo" class="logo">Studio<span>.</span></a> <!-- PERSONALIZAR -->
+      <p>© <span id="anoAtual"></span> Studio. Todos os direitos reservados.</p>
+      <div class="socials">
+        <!-- PERSONALIZAR: links reais das redes sociais -->
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="WhatsApp">WhatsApp</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
